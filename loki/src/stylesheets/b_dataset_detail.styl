@@ -1,0 +1,113 @@
+@import "./config.styl"
+#page_dataset_detail
+    padding 50px 110px;
+    .head
+        .graybtn
+            float: right
+            background-color: #b3b3b3
+            line-height: 30px
+            padding: 0
+            width: 120px
+            color #fff
+            border: 0
+        .logo
+            display: inline-block
+            vertical-align: top
+            width: 80px
+            height: 80px
+        .fixdescheight
+            height: 42px
+        .text
+            display: inline-block
+            vertical-align: top
+            margin-left: 20px
+            .titlebox,.descbox
+                display: inline-block
+            .title.el-input
+                position: absolute
+                top: 0
+                left: 0
+            .desc.el-input
+                position: absolute
+                top: 0
+                left: 0
+            .descbox
+                display: inline-block
+                width: auto
+            .title,.desc
+                display: block
+                input
+                    padding 0
+            .title
+                line-height: 38px
+                height: 38px
+                font-size: 28px
+                color: #333
+            .desc
+                margin-top: 12px
+                line-height: 30px
+                height: 30px
+                color: #999999
+                font-size: 16px
+            .title .el-input__inner
+                line-height: 38px
+                height: 38px
+                font-size: 28px
+                color: #666
+                border: 0
+                background-color: transparent
+                border-bottom: 1px solid #80cdff
+            .desc .el-input__inner
+                min-width: 10px;
+                line-height: 30px
+                height: 30px
+                color: #666
+                font-size: 16px
+                border: 0
+                background-color: transparent
+                border-bottom: 1px solid #80cdff
+            .icon
+                color: #b3b3b3
+                position: absolute
+                bottom: 7px;
+                right: -40px;
+                width: 16px
+                height: 16px
+                margin 0
+                cursor pointer
+                z-index: 2
+            .icon:hover
+                color: #808080
+            .icon.ss
+                color #7dcfff
+            .icon.ss:hover
+                color #008ee5
+    
+    .el-tabs__content
+        overflow: visible
+    .detaillist
+        padding-top: 26px
+    .el-tabs__item
+        font-size: 18px
+        padding 0
+        margin: 0 30px
+        line-height: 44px
+        height: 44px
+    .el-tabs--top .el-tabs__item:nth-child(2)
+        margin-left: 60px
+    .el-tabs__nav
+        line-height: 44px
+    .el-tabs__nav-wrap::after
+        background-color #d9d9d9
+        height: 1px
+    .el-tabs__item.is-active
+        color: #007bc8
+        border-bottom: 2px solid #007bc8
+    .el-tabs__item:hover
+        color: #007bc8
+    .el-tabs__active-bar
+        display: none
+    .el-tabs__header
+        margin-bottom: 30px
+    .juniorlist
+        padding 0 5px

@@ -1,0 +1,215 @@
+@import "./config.styl"
+body
+    margin 0
+    font-family: "微软雅黑"
+#page_index
+    .md-button:not([disabled]).md-focused:before, .md-button:not([disabled]):active:before, .md-button:not([disabled]):hover:before
+        opacity 0
+    .md-ripple-enter
+        opacity .13
+        -webkit-transform scale(.26) translateZ(0)
+        transform scale(.26) translateZ(0)
+    .md-button
+        min-width 0
+    .md-button .md-ripple
+        padding 0
+    .md-button.md-raised:not([disabled])
+        box-shadow none
+
+    .header
+        background-color bicolor
+        background-image -moz-linear-gradient( 95deg, rgb(57,63,79) 5%, rgb(29,58,88) 20%, rgb(0,52,97) 40%, rgb(35,51,94) 100%)
+        background-image -webkit-linear-gradient( 95deg, rgb(57,63,79) 5%, rgb(29,58,88) 20%, rgb(0,52,97) 40%, rgb(35,51,94) 100%)
+        background-image -ms-linear-gradient( 95deg, rgb(57,63,79) 5%, rgb(29,58,88) 20%, rgb(0,52,97) 40%, rgb(35,51,94) 100%)
+        width 100%
+        height 200px
+        padding 30px
+        
+        .el-row
+            max-width 1200px
+            margin auto
+
+            .logo
+                width 174px
+            
+            h1
+                padding-left 40px
+                padding-top 50px
+                color #FFF
+                margin 0
+                font-weight normal
+                font-size 30px
+
+    .main
+        text-align center
+        padding-top 30px
+        max-width 400px
+        margin auto
+        margin-bottom 30px
+
+        .el-form-item
+            margin-bottom 20px
+
+        .el-tabs__nav
+            float none
+            display inline-block
+        .el-tabs__nav-wrap
+            margin-bottom 0
+        .el-tabs__header
+            border-bottom 2px solid bicolor
+        .el-tabs--card>.el-tabs__header .el-tabs__item
+            width 150px
+            color bicolor
+            height 48px
+            font-size 18px
+            line-height 48px
+        .el-tabs--card>.el-tabs__header .el-tabs__item:first-child
+            border-top-right-radius 8px
+        .el-tabs--card>.el-tabs__header .el-tabs__item:last-child
+            border-top-left-radius 8px
+
+        .el-tabs--card>.el-tabs__header .el-tabs__item.is-active
+            background-color bicolor
+            color #fff
+        .el-tabs--card>.el-tabs__header .el-tabs__item
+            border-left 0
+            border-bottom 0
+        .el-tabs__nav
+            border 2px solid bicolor
+            border-radius 8px 8px 0 0
+            border-bottom 0
+        .icon 
+            width: 20px
+            height: 20px
+            vertical-align: -0.15em
+            fill: currentColor
+            overflow: hidden
+            color: #666
+            margin: 0 auto
+            text-align: center
+            display: block
+        .el-tabs__header
+            margin-bottom 10px
+
+        .el-tabs__content
+            max-width 300px
+            margin auto
+            padding-top 20px
+
+            .iptgroup 
+                position relative
+
+                .icon
+                    position absolute
+                    left 20px
+                    top 13px
+                    color #67747d
+
+            .el-input
+                input
+                    height 44px
+                    border-radius 2px
+                    border-color #d4deea
+                    padding-left 60px;
+                    color #67747d
+                .el-input.is-active .el-input__inner, .el-input__inner:focus
+                    border-color bicolor
+            .el-form-item.is-error .el-input__inner
+                border-color  #f56c6c
+            .extbox
+                color #67747d
+                font-size 14px
+                padding 0 0 20px
+                color #999
+
+                .forget
+                    float left
+                    margin 0
+                    height auto
+                    color #999
+                    line-height 20px
+                    padding 0
+                    border 0
+                .forget:hover,.forget:focus
+                        color #667480
+                        background-color #fff
+                .msglogin,.psdlogin
+                    float right
+                    margin 0
+                    height auto
+                    color #999
+                    line-height 20px
+                    padding 0
+                    border 0
+                    span
+                        line-height 20px
+                        vertical-align: top;
+                    .icon
+                        display inline-block
+                        margin-right 10px
+                        vertical-align top
+                        color #999
+                .msglogin:hover,.msglogin:focus,.psdlogin:hover,.psdlogin:focus
+                        color #667480
+                        background-color #fff
+                        .icon
+                            color #667480
+            
+            .loginform
+                .regmsgbox
+                    width 53.33%
+                    float left
+                .getregmsg
+                    width 40%
+                    float right
+                    height 44px
+                    margin-top 0
+                    font-size 14px
+
+            .regform
+                .el-input
+                    input
+                        padding-left 20px;
+                .regmsgbox
+                    width 53.33%
+                    float left
+                .getregmsg
+                    width 40%
+                    float right
+                    height 44px
+                    margin-top 0
+                    font-size 14px
+                .protocol
+                    font-size 12px
+                    color #666
+                    a
+                        text-decoration: underline;
+                        color #666
+
+            .login,.register,.getregmsg
+                width 100%
+                margin 10px 0 0 0
+                height 50px
+                background-color bicolor
+                font-size 18px
+                color #fff
+                border 0
+                border-radius 0
+            .login.is-disabled,.register.is-disabled,.getregmsg.is-disabled
+                background-color #ccc
+            .register
+                margin-top 10px
+            
+
+    .footer
+        position: fixed
+        bottom: 0
+        text-align center
+        width 100%
+        background-color #bedffe
+        
+        p
+            margin 0
+            line-height 30px
+            font-size 12px
+            color #333

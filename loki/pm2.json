@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "loki_prod",
+      "script": "bin/www",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}

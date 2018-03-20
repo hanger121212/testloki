@@ -1,0 +1,62 @@
+@import "./config.styl"
+#page_datasources
+    padding 50px 110px
+    .title
+        font-size: 28px
+        color: #333
+    .search
+        float right
+        line-height: 37px;
+        font-size: 14px;
+        width: 150px;
+        input
+            height: 30px;
+    .el-tabs__content
+        overflow: visible
+    .connectorlist
+        padding-top: 40px
+    .el-tabs__item
+        font-size: 18px
+        padding 0
+        margin: 0 30px
+        line-height: 60px
+        height: 60px
+    .el-tabs--top .el-tabs__item:nth-child(2)
+        margin-left: 60px
+    .el-tabs__nav
+        line-height: 60px
+    .el-tabs__nav-wrap::after
+        background-color #d9d9d9
+        height: 1px
+    .el-tabs__item.is-active
+        color: #007bc8
+        border-bottom: 2px solid #007bc8
+    .el-tabs__item:hover
+        color: #007bc8
+    .el-tabs__active-bar
+        display: none
+    .el-tabs__header
+        margin-bottom: 30px
+    .juniorlist
+        padding 0 5px
+        .connector
+            float: left
+            padding 0 25px;
+            img
+                display: block
+                width: 160px
+                height: 160px
+                transition: all 0.2s ease-out;
+                cursor: pointer
+            span
+                display: block
+                text-align: center
+                line-height: 55px
+                font-size: 16px
+                color: #333
+            img:hover
+                transform: translateY(-3px) translateZ(0);
+                box-shadow: 0 4px 6px rgba(0,0,0,0.11), 0 4px 6px rgba(220, 233, 255, 0.48);
+            // img:hover
+            //     transform: scale(1.01);
+            //     box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);

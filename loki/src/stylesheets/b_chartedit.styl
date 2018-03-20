@@ -1,0 +1,225 @@
+@import "./config.styl"
+#page_chartedit
+    position: relative
+    height: 100%
+    .header
+        z-index: 113
+        background-color: #fff
+        position: absolute
+        top: 0
+        height: 70px
+        width: 100%
+        border-bottom: 1px solid #d9d9d9
+        .back
+            width: 220px
+            float: left
+            padding-left: 20px
+            span
+                line-height: 70px
+                color: #333
+                font-size: 20px
+            .icon
+                color: #666
+                width: 16px
+                height: 16px
+                vertical-align: -0.1em
+        .title
+            float: left
+            padding-left: 20px
+            span
+                line-height: 70px
+                color: #666
+                font-size: 12px
+            .icon
+                margin-left: 10px
+                color: #999
+                width: 12px
+                height: 12px
+    .leftview
+        z-index: 112
+        background-color: #fafafa
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+        position: absolute
+        width: 220px
+        left: 0
+        top: 70px
+        bottom: 0
+        .left_desc
+            height: 100px
+            padding: 20px
+            border-bottom: 1px solid #d9d9d9
+            .left_title
+                font-size: 12px
+                color: #333
+                line-height: 12px
+            .left_type
+                padding: 20px 0 0 10px
+                line-height: 20px
+                img
+                    width: 20px
+                    height: 20px
+                    margin-right: 10px
+                    vertical-align: top
+                span
+                    vertical-align: top
+                    font-size: 12px
+                    color: #666
+                    line-height: 20px
+        .table_fields
+            padding: 20px
+            height: calc(100% - 100px)
+            .desc
+                font-size: 12px
+                color: #333
+                padding-bottom: 20px
+            .search
+                line-height: 30px;
+                font-size: 14px;
+                input
+                    height: 30px;
+                    padding-right: 40px
+                .iconbox
+                    height: 29px
+                    width: 30px
+                    background-color: #b3b3b3
+                    text-align: center
+                    position: absolute
+                    top: 1px
+                    right: 0
+                    z-index: 2999
+                .icon
+                    margin 0
+                    margin-top: 4px;
+            .fieldlistbox
+                height: calc(100% - 66px)
+                overflow: scroll
+                margin-top 15px
+            .fieldlist
+                padding 5px 5px
+                .field
+                    padding-bottom: 20px
+                    span
+                        font-size: 12px
+                        color: #333
+                    .icon
+                        color: #008fe6
+                        width: 12px
+                        height: 12px
+                
+    .rightview
+        z-index: 110
+        background-color: #fafafa
+        position: absolute
+        width: 250px
+        right: 0
+        top: 70px
+        bottom: 0
+        padding 20px 20px 0
+        overflow: scroll
+        .desc
+            font-size: 12px
+            color: #333
+            padding-bottom: 20px
+        .viewbox
+            padding: 0 10px
+            .charttype
+                margin-bottom: 15px
+                border-bottom: 1px solid #ebebeb
+                .title
+                    font-size: 12px
+                    color: #666
+                .imglist
+                    padding-top: 15px
+                    padding-bottom: 5px
+                    img
+                        cursor pointer
+    .mainview
+        z-index: 111
+        height: calc(100% - 70px)
+        min-width:450px 
+        margin-left: 220px
+        margin-top: 70px
+        margin-right: 250px
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+        background-color: #fff
+        .mainbox
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100%;
+            .chart_args
+                min-height: 100px
+                border-bottom: 1px solid #e6e6e6
+                flex: none;
+                .row
+                    height: 50px;
+                    padding: 10px 0
+                    margin  0 20px
+                    >span
+                        color: #333
+                        font-size: 12px
+                        float: left
+                        width: 60px
+                        line-height: 30px
+                    .itemlist
+                        float: left
+                        width: calc(100% - 80px)
+                        height: 28px
+                        .item
+                            float: left
+                            background-color: #ccebff
+                            border: 1px solid #80ceff
+                            padding: 8px
+                            line-height: 12px
+                            margin-right: 10px
+                            .icon
+                                width: 12px
+                                height: 12px
+                                color: #008ee4
+                            span
+                                line-height: 12px
+                                font-size: 12px
+                                color: #333
+                .row.dimension
+                    height: 49px
+                    border-bottom: 1px dashed #e5e5e5
+            .chart_content
+                flex: 1;
+                .chart_params
+                    width: 180px
+                    height: 100%
+                    border-right: 1px solid #e6e6e6
+                    float: left
+                    position: relative
+                    .chart_filters
+                        height: 50%
+                        padding: 20px 15px
+                        border-bottom: 1px solid #e6e6e6
+                        .title
+                            font-size: 12px
+                            color: #333
+                        .placeholder
+                            width: 100%
+                            position: absolute
+                            text-align: center
+                            font-size: 12px
+                            top: 70px
+                            left: 0
+                            color: #ccc
+                    .chart_themes
+                        padding: 20px 15px
+                        .title
+                            font-size: 12px
+                            color: #333
+                .chartBox
+                    width: calc(100% - 180px)
+                    height: 100%
+                    float: left
+                    .echarts
+                        width: 100%
+                        height: 100%
+                

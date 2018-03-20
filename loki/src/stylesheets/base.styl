@@ -1,0 +1,435 @@
+@import "./config.styl"
+html
+    height: 100%
+body
+    margin 0
+    font-family: "微软雅黑"
+    background-color: #f1f2f7
+    height: 100%
+.el-table::before
+    height 0
+.el-table--border::after, .el-table--group::after
+    width: 0
+.el-table--border
+    border-top: 0
+.el-message
+    top 0
+.el-notification.right
+    top: 74px !important;
+input, textarea, select, button
+    font-family: "微软雅黑"
+.el-button,.el-input__inner
+    border-radius: 2px;
+.el-checkbox__inner
+    border-radius: 0px;
+.el-popper .popper__arrow
+    display: none
+.el-select .el-input .el-select__caret
+    font-size: 12px
+.el-table .cell
+    padding 0 !important
+.el-textarea__inner
+    border-radius: 2px
+.el-collapse-item__wrap
+    border-bottom-left-radius: 2px
+    border-bottom-right-radius: 2px
+.el-collapse-item__header
+    border-radius: 2px;
+.is-active
+    .el-collapse-item__header
+        border-bottom-right-radius: 0
+        border-bottom-left-radius: 0
+.el-dialog__title
+    color: #007ac7
+.el-dialog__header
+    border-bottom: 1px solid #d9d9d9
+    padding: 16px 20px
+.el-dialog__body
+    padding: 40px 60px
+.el-dialog__headerbtn
+    top: 20px
+    right: 20px
+    color: #cccccc
+    font-size: 18px
+.el-dialog__footer
+    padding 10px 60px 30px 60px
+    .el-button
+        border: 0
+        padding: 0
+        width: 80px
+        text-align: center
+        span
+            font-size: 14px
+            line-height: 30px
+            color #fff
+    .ok.el-button
+        background-color: #ff9000
+    .cancel.el-button
+        background-color: #ccc
+.el-input__inner,.el-textarea__inner
+    border-color: #b3b3b3
+    position: relative
+    padding-left: 20px
+    padding-right: 20px
+.el-input__inner:hover,.el-textarea__inner:hover
+    border-color: #808080 !important;
+.el-input__inner:focus,.el-textarea__inner:focus
+    border-color: #80cefe !important;
+.el-popper[x-placement^=top]
+    margin-bottom: 0;
+.el-popper[x-placement^=bottom]
+    margin-top: 0
+.el-select-dropdown__list
+    padding: 0
+.el-select-dropdown__item
+    color: #666666
+    line-height: 40px
+    height: 40px
+    font-size: 12px
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover
+    background-color: #ccebff
+    color: #028ee6
+.el-select-dropdown
+    box-shadow: 0px 0px 10px 0px rgba(127, 206, 255, 0.5);
+    border: 0
+.icon
+    margin-right: 10px
+    fill currentColor
+    width: 20px
+    height: 20px
+    color #fff
+::-webkit-scrollbar
+    width: 10px
+    height: 10px
+::-webkit-scrollbar-thumb
+    background-color #ccc
+.el-dialog__wrapper
+    z-index: 22002 !important;
+.v-modal
+    z-index: 22001 !important
+#page_base
+    height: 100%
+    :focus
+        outline: none
+    .top-menu-bar
+        background-color bicolor
+        border: 0
+        .logo
+            padding 18px 38px
+            margin-right: 10px
+            margin-left: 5px
+            float left
+            img
+                height 24px
+                width 124px
+                display block
+        .el-menu-item
+            text-align center
+            width 120px
+            margin 0 20px
+            padding 0 
+            color #fff
+            span
+                font-size 16px
+                line-height 60px
+        .el-menu-item.is-active
+                color #b3e2ff
+                border-bottom: 4px solid #b3e2ff;
+        .el-menu-item:hover,.el-menu-item:focus
+                background-color: transparent
+                color #b3e2ff
+        .icon1
+            width 26px
+            height 20px
+        .icon2
+            width 18px
+            height 22px
+        .icon3
+            width 20px
+            height 20px
+        .userbar
+            float: right
+            padding-right 15px
+            color: #fff
+            a
+                color #fff
+                display: block
+            *
+                vertical-align: middle
+                text-align: center
+            .userinfo
+                float: left
+                min-width: 120px
+                line-height: 60px
+                font-size: 16px
+                height: 60px
+            .baritem
+                float: left
+                width: 70px
+                line-height: 60px
+                font-size: 16px
+                height: 60px
+
+@-webkit-keyframes square-animation {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    10.5% {
+        left: 0;
+        top: 0;
+    }
+
+    12.5% {
+        left: 33.3333%;
+        top: 0;
+    }
+
+    23% {
+        left: 33.3333%;
+        top: 0;
+    }
+
+    25% {
+        left: 66.6666%;
+        top: 0;
+    }
+
+    35.5% {
+        left: 66.6666%;
+        top: 0;
+    }
+
+    37.5% {
+        left: 66.6666%;
+        top: 33.3333%;
+    }
+
+    48% {
+        left: 66.6666%;
+        top: 33.3333%;
+    }
+
+    50% {
+        left: 33.3333%;
+        top: 33.3333%;
+    }
+
+    60.5% {
+        left: 33.3333%;
+        top: 33.3333%;
+    }
+
+    62.5% {
+        left: 33.3333%;
+        top: 66.6666%;
+    }
+
+    73% {
+        left: 33.3333%;
+        top: 66.6666%;
+    }
+
+    75% {
+        left: 0;
+        top: 66.6666%;
+    }
+
+    85.5% {
+        left: 0;
+        top: 66.6666%;
+    }
+
+    87.5% {
+        left: 0;
+        top: 33.3333%;
+    }
+
+    98% {
+        left: 0;
+        top: 33.3333%;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@keyframes square-animation {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    10.5% {
+        left: 0;
+        top: 0;
+    }
+
+    12.5% {
+        left: 33.3333%;
+        top: 0;
+    }
+
+    23% {
+        left: 33.3333%;
+        top: 0;
+    }
+
+    25% {
+        left: 66.6666%;
+        top: 0;
+    }
+
+    35.5% {
+        left: 66.6666%;
+        top: 0;
+    }
+
+    37.5% {
+        left: 66.6666%;
+        top: 33.3333%;
+    }
+
+    48% {
+        left: 66.6666%;
+        top: 33.3333%;
+    }
+
+    50% {
+        left: 33.3333%;
+        top: 33.3333%;
+    }
+
+    60.5% {
+        left: 33.3333%;
+        top: 33.3333%;
+    }
+
+    62.5% {
+        left: 33.3333%;
+        top: 66.6666%;
+    }
+
+    73% {
+        left: 33.3333%;
+        top: 66.6666%;
+    }
+
+    75% {
+        left: 0;
+        top: 66.6666%;
+    }
+
+    85.5% {
+        left: 0;
+        top: 66.6666%;
+    }
+
+    87.5% {
+        left: 0;
+        top: 33.3333%;
+    }
+
+    98% {
+        left: 0;
+        top: 33.3333%;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
+
+@-webkit-keyframes hue-rotate {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes hue-rotate {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+.loading__square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29.1666%;
+    height: 29.1666%;
+    margin: 2.0833%;
+    border-radius: 2px;
+    background: #07a;
+    background-image: linear-gradient(45deg, #275181 40%, #007bc8 60%);
+    background-image: -moz-linear-gradient(#fa0, #fa0);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    -webkit-animation: square-animation 10s ease-in-out infinite both;
+    animation: square-animation 10s ease-in-out infinite both;
+}
+.loading__square:nth-of-type(0) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+
+.loading__square:nth-of-type(1) {
+    -webkit-animation-delay: -1.4285714286s;
+    animation-delay: -1.4285714286s;
+}
+
+.loading__square:nth-of-type(2) {
+    -webkit-animation-delay: -2.8571428571s;
+    animation-delay: -2.8571428571s;
+}
+
+.loading__square:nth-of-type(3) {
+    -webkit-animation-delay: -4.2857142857s;
+    animation-delay: -4.2857142857s;
+}
+
+.loading__square:nth-of-type(4) {
+    -webkit-animation-delay: -5.7142857143s;
+    animation-delay: -5.7142857143s;
+}
+
+.loading__square:nth-of-type(5) {
+    -webkit-animation-delay: -7.1428571429s;
+    animation-delay: -7.1428571429s;
+}
+
+.loading__square:nth-of-type(6) {
+    -webkit-animation-delay: -8.5714285714s;
+    animation-delay: -8.5714285714s;
+}
+
+.loading__square:nth-of-type(7) {
+    -webkit-animation-delay: -10s;
+    animation-delay: -10s;
+}
+
+.loading {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    // -webkit-animation: hue-rotate 10s linear infinite both;
+    // animation: hue-rotate 10s linear infinite both;
+}
